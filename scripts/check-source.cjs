@@ -1,0 +1,1 @@
+const fs=require('node:fs'),cp=require('node:child_process');function check(dir){for(const x of fs.readdirSync(dir,{withFileTypes:true})){const p=dir+'/'+x.name;if(x.isDirectory())check(p);else if(p.endsWith('.js'))cp.execFileSync(process.execPath,['--check',p]);}}check('src');console.log('Source checks passed');

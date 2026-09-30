@@ -1,0 +1,17 @@
+import {validateMigration} from "./course/validationActions/validateMigration.js";
+import {validateDeleteComments} from "./course/validationActions/validateDeleteComments.js";
+import {validateCreateUpdateComments} from "./course/validationActions/validateCreateUpdateComments.js";
+import {validateGetComments} from "./course/validationActions/validateGetComments.js";
+import {validateUserReport} from "./course/validationActions/validateUserReport.js";
+import {validateUserManagement} from "./course/validationActions/validateUserManagement.js";
+import {validateTextAndSubfield} from "./course/validationActions/validateTextAndSubfield.js";
+import {validateTimeouts} from "./course/validationActions/validateTimeouts.js";
+import {validatePOLP} from "./course/validationActions/validatePOLP.js";
+import {validateProjection} from "./course/validationActions/validateProjection.js";
+import {validateFacetedSearch} from "./course/validationActions/validateFacetedSearch.js";
+import {validateErrorHandling} from "./course/validationActions/validateErrorHandling.js";
+import {validateConnectionPooling} from "./course/validationActions/validateConnectionPooling.js";
+import {validateUserPreferences} from "./course/validationActions/validateUserPreferences.js";
+import {validatePaging} from "./course/validationActions/validatePaging.js";
+import {validateConnection} from "./course/validationActions/validateConnection.js";
+export const validators={Migration:validateMigration,DeleteComments:validateDeleteComments,CreateUpdateComments:validateCreateUpdateComments,GetComments:validateGetComments,UserReport:validateUserReport,UserManagement:validateUserManagement,TextAndSubfield:validateTextAndSubfield,Timeouts:validateTimeouts,POLP:validatePOLP,Projection:validateProjection,FacetedSearch:validateFacetedSearch,ErrorHandling:validateErrorHandling,ConnectionPooling:validateConnectionPooling,UserPreferences:validateUserPreferences,Paging:validatePaging,Connection:validateConnection};
